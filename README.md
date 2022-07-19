@@ -41,26 +41,34 @@ npm install
 
 ```
 
-4. Compile Contract
+4. : Create a .env file and paste the code below
+
+```shell
+   KLAYTN_URL='https://api.baobab.klaytn.net:8651'
+  PRIVATE_KEY= your private key copied from kaikas wallet
+
+```
+
+5. Compile Contract
 
 ```shell
   npx hardhat compile
 ```
 
-5. Start Hardhat Node
+6. Start Hardhat Node
 
 ```shell
   npx hardhat node
 ```
 
-6. Deployment
+7. Deployment
 
 ```shell
 npx hardhat run scripts/deploy.ts --network klaytn
 ```
 
 
-7. Mint
+8. Mint
 
 ```shell
 npx hardhat run scripts/mint.ts --network klaytn
