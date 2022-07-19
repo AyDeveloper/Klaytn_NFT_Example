@@ -17,27 +17,50 @@ git clone https://github.com/AyDeveloper/Klaytn_NFT_Example.git
 cd Klaytn_NFT_Example
 npm install
 ```
+3. Setting Hardhat Config
+```shell
+  const config: HardhatUserConfig = {
+  solidity: "0.8.4",
+  networks: {
+    klaytn: {
+      url: process.env.KLAYTN_URL || "",
+      // This is the only field we are including in our file
+      gasPrice: 250000000000,
+      accounts:
+        process.env.PRIVATE_KEY !== undefined ? [process.env.PRIVATE_KEY] : [],
+    },
+  },
+  gasReporter: {
+    enabled: process.env.REPORT_GAS !== undefined,
+    currency: "USD",
+  },
+  etherscan: {
+    apiKey: process.env.ETHERSCAN_API_KEY,
+  },
+};
 
-3. Compile Contract
+```
+
+4. Compile Contract
 
 ```shell
   npx hardhat compile
 ```
 
-4. Start Hardhat Node
+5. Start Hardhat Node
 
 ```shell
   npx hardhat node
 ```
 
-5. Deployment
+6. Deployment
 
 ```shell
 npx hardhat run scripts/deploy.ts --network klaytn
 ```
 
 
-5. Mint
+7. Mint
 
 ```shell
 npx hardhat run scripts/mint.ts --network klaytn
