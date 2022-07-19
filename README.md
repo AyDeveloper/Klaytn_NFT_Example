@@ -14,7 +14,7 @@ git clone https://github.com/AyDeveloper/Klaytn_NFT_Example.git
 2. Install NPM packages:
 
 ```shell
-cd Hardhat_Klaytn_Example
+cd Klaytn_NFT_Example
 npm install
 ```
 
@@ -46,5 +46,5 @@ npx hardhat run scripts/mint.ts --network klaytn
 
 
 # Other Links
-1. How to set up a hardhat project for klaytn https://oxpampam.hashnode.dev/how-to-set-up-a-hardhat-project-for-klaytn
+1. Build, Deploy and Mint KIP17 Token on Klaytn https://oxpampam.hashnode.dev/build-deploy-and-mint-kip17-token-on-klaytn
 
