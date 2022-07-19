@@ -1,8 +1,8 @@
 # Harhat_Klaytn_Nft_Example
 
-This is a simple example for setting up a hardhat Nft project for Klaytn putting in to consideration its fixed gas price model. In this guide, we will walk through creating and deploying KIP-17 smart contract on the Klaytn test network using Solidity, Hardhat, Kaikas, Nft Storage and visualizing it on opensea. 
+This is a simple example for setting up a hardhat Nft project for Klaytn. In this guide, we will walk through creating and deploying KIP-17 smart contract on the Klaytn test network using Solidity, Hardhat, Kaikas, Nft Storage and visualizing it on opensea. 
 
-This would guide you into how to set up a project, test and deploy it to klaytn putting into consideration the Klaytn compatible gas price using Hardhat and ethers js.
+This would guide you into how to set up a project, compile and deploy it to klaytn putting into consideration the Klaytn compatible gas price using Hardhat and ethers js.
 
 ## Installation
 1. Clone this repo:
